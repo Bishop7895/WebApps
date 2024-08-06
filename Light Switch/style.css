@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  transition: 1s ease-in-out background-color;
+  background-color: rgb(255, 255, 255);
+}
+
+.body--dark {
+  background-color: #535050;
+}
+
+.button {
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: monospace;
+  border: 5px solid #333;
+  padding: 0.5rem 1rem;
+  background-color: rgb(253, 249, 249);
+  border-radius: 15px;
+  color: #333;
+}
+
+.button-dark {
+  border: 5px solid snow;
+  background-color: #333;
+  color: rgb(216, 106, 16);
+  box-shadow: 0 0 5px yellow, 0 0 10px rgb(255, 115, 0),
+    0 0 20px rgb(255, 30, 0);
+}
