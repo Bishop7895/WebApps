@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Todo App</h1>
+    </header>
+    <main>
+        <form>
+            <input type="text" name="description" id="description" placeholder=" add new Todos!!" />
+            <button id="btn-add">Add</button>
+        </form>
+        <form id="picked-filter">
+            <ul>
+                <li>
+                    <input type="radio" name="filter-1" id="filter-1" />
+                    <label for="todo-1">All</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-1" id="filter-2" />
+                    <label for="todo-1">Open</label>
+                </li>
+                <li>
+                    <input type="radio" name="filter-1" id="filter-3" />
+                    <label for="todo-1">Done</label>
+                </li>
+            </ul>
+            <button>Remove Done Todos</button>
+        </form>
+        <h2>Your Todos</h2>
+        <ul id="todos-output">
+            <li>
+                <input type="checkbox" name="todo-1" id="todo-1" />
+                <label for="todo-1">Learn JS</label>
+            </li>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
