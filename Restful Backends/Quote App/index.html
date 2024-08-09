@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote API</title>
+</head>
+
+<body>
+    <h1>Quote App</h1>
+    <button type="button" id="QuoteApp" class="newQuote-button">Get Quote</button>
+    <script>
+
+        fetch("https://dummy-apis.netlify.app/api/quote")
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                }
+            })
+            .then((data) => {
+                document.body.append(document.createTextNode(data.quote));
+            })
+
+
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
